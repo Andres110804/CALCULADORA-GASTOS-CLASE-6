@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    font-display: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #7ca3ef;
+}
+
+.app{
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 16px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 24px;
+    color: #030d5a;
+    text-decoration: underline;
+}
+
+
+.card{
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.card:hover{
+    background-color: rgb(213, 186, 239);
+    transition: ease 1s;
+}
+
+label{
+    display: block;
+    margin-top: 8px;
+    font-size: 18px;
+    color: #001d5d;
+    text-decoration: underline;
+}
+
+input, select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #979ed5;
+    border-radius: 4px;
+    text-decoration: underline;
+}
+
+input[type="number"]{
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background-color: #f9fafb;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    
+}
+
+button{
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5c85de;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover{
+    opacity: 0.9;
+    background-color: #001d5d;
+    transition: ease 1s;
+}
+
+#expensesList{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#expensesList, li{
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 14px;
+}
+
+#select-wrapped{
+    position: relative;
+    width: 100%;
+}
+
+#categoryInput{
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 16px;
+    color: #374151;
+    background-color: #f9fafb;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    cursor: pointer;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+#categoryInput:focus{
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0, 3px rgba(99, 102, 241, 0.2);
+}
+
+.error{
+    color: #b91c1c;
+    background-color: #f0a5a5;
+    border-radius: 8px;
+}
+
+.status-ok{
+    color: #16a34a;
+    background-color: #7ba38a;
+    border-radius: 8px;
+}
+
+.status-bad{
+    color: #b91c1c;
+    background-color: #f0a5a5;
+    border-radius: 8px;
+}
